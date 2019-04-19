@@ -5,11 +5,25 @@
     <title>Questão 10</title>
 </head>
 <body>
-    <p id="nome"></p>
-    <p id="sobrenome"></p>
+    <p id="nome">Rodrigo</p>
+    <p id="sobrenome">Torres</p>
     <h1 id="nomecompleto"></h1>
     <script>
-    
+        var nome;
+        var sobrenome;
+        var nomecompleto;
+
+        //Referencias
+        nome=document.getElementById("nome");
+        sobrenome=document.getElementById("sobrenome");
+        nomecompleto=document.getElementById("nomecompleto");
+
+        //Textos
+        tNome=nome.textContent;
+        tSobrenome=sobrenome.textContent;
+        
+        nomecompleto.textContent="Bem vindo "+tNome+" "+tSobrenome+"!";
+
     </script>
 </body>
 </html>

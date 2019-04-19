@@ -7,6 +7,16 @@
 <body>
     <div id="interativo">Clique-me!</div>
     <script>
+        var interativo;
+        
+        //Referencias
+        interativo=document.getElementById("interativo");
+
+        interativo.addEventListener("click",addTexto);
+
+        function addTexto(){
+            this.textContent="Funcionou!";
+        }
         
     </script>
 </body>

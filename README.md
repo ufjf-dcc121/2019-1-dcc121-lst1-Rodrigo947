@@ -1,3 +1,3 @@
-Nome: Rodrigo Torres Rego
-Matrícula: 201876029
-Curso: Sistemas de Informação
+Rodrigo Torres Rego
+201876029
+Sistemas de Informação

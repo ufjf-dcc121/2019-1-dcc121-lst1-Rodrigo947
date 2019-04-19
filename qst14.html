@@ -7,26 +7,37 @@
 <body>
     <div id="x">7</div>
     <div id="y">5</div>
-    <div id="soma"></div>
     <div id="produto"></div>
+    <div id="soma"></div> 
     <button id="calcular">Calcular!</button>
 
     <script>
         var x;
         var y;
-        var soma;
         var produto;
+        var soma;
         var botao;
 
         //Referencias
         x=document.getElementById("x");
         y=document.getElementById("y");
-        soma=document.getElementById("soma");
         produto=document.getElementById("produto");
+        soma=document.getElementById("soma");
         botao=document.getElementById("calcular");
 
         x.contentEditable=true;
         y.contentEditable=true;
+
+        botao.addEventListener("click",calcular);
+
+        function calcular(){
+            //Valores
+            vX=parseInt(x.textContent);
+            vY=parseInt(y.textContent);
+
+            produto.textContent="O produto de "+vX+" e "+vY+" é "+(vX*vY)+"!";
+            soma.textContent="A soma de "+vX+" e "+vY+" é "+(vX+vY)+"!"; 
+        }
 
     </script>
     

@@ -10,11 +10,11 @@
             <h1>Resultado da Avaliação</h1>
         </section>
         <p>
-            Olá Fulano, você está matriculado há 
+            Olá <span id="nome">Fulano</span>, você está matriculado há 
             <span id="anos">2</span> anos no curso de Confeitaria e as notas das suas disciplinas são: 
-            <span id="nota1">70</span> em Confeitaria Básica; 
-            <span id="nota2">80</span> em Coberturas e 
-            <span id="nota3">60</span> em Broas e Bolos.
+            <span id="confeitaria">70</span> em Confeitaria Básica; 
+            <span id="coberturas">80</span> em Coberturas e 
+            <span id="bolos">60</span> em Broas e Bolos.
         </p>
         
         <p id="resultado"></p>
@@ -24,5 +24,30 @@
 
         <p id="melhorias"></p>
     </main>
+
+    <script>   
+    
+        var nome, anos, confeitaria, coberturas, bolos, botaoAvaliar, botaoLimpar, resultado, melhorias, media
+        
+        //Referencias
+        nome = document.getElementById("nome")
+        anos = document.getElementById("anos")
+        confeitaria = document.getElementById("confeitaria")
+        coberturas = document.getElementById("coberturas")
+        bolos = document.getElementById("bolos")
+        botaoAvaliar = document.getElementById("avaliar")
+        botaoLimpar = document.getElementById("limpar")
+        resultado = document.getElementById("resultado")
+        melhorias = document.getElementById("melhorias")
+
+        //contentEditable 
+        nome.contentEditable = true
+        anos.contentEditable = true
+        confeitaria.contentEditable = true
+        coberturas.contentEditable = true
+        bolos.contentEditable = true
+
+    </script>
+
 </body>
 </html>
